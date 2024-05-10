@@ -23,4 +23,4 @@ if __name__ == "__main__":
     qsim = SingleQubitSimulator()
     for idx_sample in range(10):
         random_sample = qrng(qsim)
-        print(f"Our QRNG returned {random_sample}.")
+        print(f"Our QRNG returned {random_sample}.") 
