@@ -1,6 +1,7 @@
-from interface import QuantumDevice
-from simulator import SingleQubitSimulator
+from interface import QuantumDevice         # the quantum computer you want to use for the random number generation
+from simulator import SingleQubitSimulator  # the single qubit simulator from simulator
 
+# create a function that utilizes a quantum device asking for a qubit to collapse.
 def qrng(device: QuantumDevice) -> bool:
     with device.using_qubit() as q:
         q.h()
